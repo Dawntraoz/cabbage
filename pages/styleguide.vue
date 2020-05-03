@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Cabbage</h1>
+    <h1>Style guide</h1>
   </div>
 </template>
 

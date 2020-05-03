@@ -1,6 +1,8 @@
 /* Common Styles */
+html,
+body { @apply overflow-x-hidden; }
 body {
-    @apply font-normal text-base;
+    @apply font-normal text-base text-gray-800 overflow-x-hidden;
 }
 
 /* - Headings */
