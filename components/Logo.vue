@@ -6,8 +6,6 @@
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 54.849 54.849"
-    width="50"
-    height="50"
   >
     <path
       fill="#008e65"
