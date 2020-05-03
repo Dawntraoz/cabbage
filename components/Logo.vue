@@ -6,8 +6,8 @@
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 54.849 54.849"
-    width="245"
-    height="180"
+    width="50"
+    height="50"
   >
     <path
       fill="#008e65"
@@ -43,7 +43,6 @@
 <style>
 .logo {
   animation: 1s appear;
-  margin: auto;
 }
 
 @keyframes appear {
