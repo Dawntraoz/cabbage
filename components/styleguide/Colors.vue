@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div v-for="color in colors" :key="color.name" class="flex flex-wrap">
+    <div
+      v-for="color in colors"
+      :key="color.name"
+      class="flex flex-wrap justify-center md:justify-start"
+    >
       <div v-for="item in color.palette" :key="item.name" class="pr-4 pb-4">
         <div class="group perspective w-28 h-28 cursor-pointer">
           <div
