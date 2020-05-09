@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   purge: [],
   target: 'relaxed',
@@ -175,6 +177,7 @@ module.exports = {
       '16': '4rem',
       '20': '5rem',
       '24': '6rem',
+      '28': '7rem',
       '32': '8rem',
       '40': '10rem',
       '48': '12rem',
@@ -766,5 +769,27 @@ module.exports = {
     transitionDelay: ['responsive']
   },
   corePlugins: {},
-  plugins: []
+  plugins: [
+    plugin(function({ addUtilities, addComponents, e, prefix, config }) {
+      const newUtilities = {
+        '.rotate-y-0': {
+          transform: 'rotateY(0deg)'
+        },
+        '.rotate-y-180': {
+          transform: 'rotateY(180deg)'
+        },
+        '.transform-style-3d': {
+          transformStyle: 'preserve-3d'
+        },
+        '.backface-hidden': {
+          backfaceVisibility: 'hidden'
+        },
+        '.perspective': {
+          perspective: '1000px'
+        }
+      }
+
+      addUtilities(newUtilities, ['group-hover'])
+    })
+  ]
 }

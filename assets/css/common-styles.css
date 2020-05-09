@@ -2,7 +2,7 @@
 html,
 body { @apply overflow-x-hidden; }
 body {
-    @apply font-normal text-base text-gray-800 overflow-x-hidden;
+    @apply font-normal text-base text-gray-900 overflow-x-hidden;
 }
 
 /* - Headings */
