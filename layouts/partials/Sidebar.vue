@@ -4,12 +4,12 @@
     <nav>
       <ul class="py-4">
         <li class="py-2">
-          <nuxt-link to="/" class="nav-link">
+          <nuxt-link to="/" class="nav-link" title="Main dashboard">
             <charts class="w-6 h-6 md:w-8 md:h-8 fill-current" />
           </nuxt-link>
         </li>
         <li class="py-2">
-          <nuxt-link to="/styleguide" class="nav-link">
+          <nuxt-link to="/styleguide" class="nav-link" title="Style guide">
             <bone class="w-6 h-6 md:w-8 md:h-8 fill-current" />
           </nuxt-link>
         </li>
