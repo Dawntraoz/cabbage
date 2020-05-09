@@ -19,15 +19,16 @@
     "@nuxtjs/pwa": "^3.0.0-0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9",
-    "@nuxtjs/tailwindcss": "^1.0.0",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^1.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1"
+    "nodemon": "^1.18.9",
+    "prettier": "^1.19.1",
+    "tailwindcss-plugins": "^0.3.0"
   }
 }

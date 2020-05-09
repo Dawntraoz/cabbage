@@ -667,7 +667,24 @@ module.exports = {
       '500': '500ms',
       '700': '700ms',
       '1000': '1000ms'
-    }
+    },
+    gradients: (theme) => ({
+      'primary-45': [
+        '45deg',
+        theme('colors.primary.700'),
+        theme('colors.primary.300')
+      ],
+      'complementary-45': [
+        '45deg',
+        theme('colors.complementary.700'),
+        theme('colors.complementary.300')
+      ],
+      'mixed-45': [
+        '45deg',
+        theme('colors.complementary.300'),
+        theme('colors.primary.100')
+      ]
+    })
   },
   variants: {
     accessibility: ['responsive', 'focus'],
@@ -770,6 +787,7 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [
+    require('tailwindcss-plugins/gradients'),
     plugin(function({ addUtilities, addComponents, e, prefix, config }) {
       const newUtilities = {
         '.rotate-y-0': {

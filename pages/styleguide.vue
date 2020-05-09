@@ -7,17 +7,23 @@
       <template slot="title">Colors</template>
       <colors />
     </style-section>
+    <style-section>
+      <template slot="title">Gradients</template>
+      <gradients />
+    </style-section>
   </div>
 </template>
 
 <script>
 import StyleSection from '~/components/styleguide/StyleSection.vue'
 import Colors from '~/components/styleguide/Colors.vue'
+import Gradients from '~/components/styleguide/Gradients.vue'
 
 export default {
   components: {
     StyleSection,
-    Colors
+    Colors,
+    Gradients
   }
 }
 </script>
