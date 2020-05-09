@@ -1,7 +1,7 @@
 <template>
   <div class="flex min-h-screen bg-primary-50">
     <sidebar />
-    <nuxt class="flex-auto h-screen overflow-y-auto p-6" />
+    <nuxt class="flex-auto h-screen overflow-y-auto p-4 md:p-6" />
   </div>
 </template>
 

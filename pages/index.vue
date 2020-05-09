@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>Cabbage</h1>
+    <header>
+      <h1>Cabbage</h1>
+    </header>
   </div>
 </template>
 
