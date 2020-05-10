@@ -21,13 +21,15 @@
             </div>
             <div :class="item.color" class="card__back">
               <p
-                class="text-lg font-bold text-center break-words max-w-full"
+                class="text-center max-w-full"
                 :class="item.dark ? 'text-white' : 'text-gray-900'"
               >
-                <span class="block leading-tight font-semibold">{{
-                  color.name
-                }}</span>
-                {{ item.name }}
+                <span
+                  class="block leading-tight truncate"
+                  :title="color.name"
+                  >{{ color.name }}</span
+                >
+                <span class="text-xl font-bold">{{ item.name }}</span>
               </p>
             </div>
           </div>
