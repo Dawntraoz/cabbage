@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   purge: [],
   target: 'relaxed',
@@ -34,6 +36,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Source Sans Pro', 'sans-serif']
+      },
+      fontSize: {
+        giant: '8rem'
       }
     },
     screens: {
@@ -175,6 +180,7 @@ module.exports = {
       '16': '4rem',
       '20': '5rem',
       '24': '6rem',
+      '28': '7rem',
       '32': '8rem',
       '40': '10rem',
       '48': '12rem',
@@ -664,7 +670,24 @@ module.exports = {
       '500': '500ms',
       '700': '700ms',
       '1000': '1000ms'
-    }
+    },
+    gradients: (theme) => ({
+      'primary-45': [
+        '45deg',
+        theme('colors.primary.700'),
+        theme('colors.primary.300')
+      ],
+      'complementary-45': [
+        '45deg',
+        theme('colors.complementary.700'),
+        theme('colors.complementary.300')
+      ],
+      'mixed-45': [
+        '45deg',
+        theme('colors.complementary.300'),
+        theme('colors.primary.100')
+      ]
+    })
   },
   variants: {
     accessibility: ['responsive', 'focus'],
@@ -766,5 +789,28 @@ module.exports = {
     transitionDelay: ['responsive']
   },
   corePlugins: {},
-  plugins: []
+  plugins: [
+    require('tailwindcss-plugins/gradients'),
+    plugin(function({ addUtilities, addComponents, e, prefix, config }) {
+      const newUtilities = {
+        '.rotate-y-0': {
+          transform: 'rotateY(0deg)'
+        },
+        '.rotate-y-180': {
+          transform: 'rotateY(180deg)'
+        },
+        '.transform-style-3d': {
+          transformStyle: 'preserve-3d'
+        },
+        '.backface-hidden': {
+          backfaceVisibility: 'hidden'
+        },
+        '.perspective': {
+          perspective: '1000px'
+        }
+      }
+
+      addUtilities(newUtilities, ['group-hover'])
+    })
+  ]
 }
