@@ -14,8 +14,8 @@
       class="w-full lg:max-w-xl border-gray-400 py-6 border-b lg:py-0 lg:border-b-0 lg:px-12 lg:border-r"
     >
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel
-        fringilla enim, ac
+        Lorem ipsum dolor sit amet, consectetur
+        <span class="italic">italic</span> elit. Vivamus vel fringilla enim, ac
         <span class="text-primary-700">primary 700</span> neque. Sed convallis
         euismod sem, vitae luctus tortor
         <span class="underline">underline</span>
