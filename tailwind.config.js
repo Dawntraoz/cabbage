@@ -36,6 +36,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Source Sans Pro', 'sans-serif']
+      },
+      fontSize: {
+        giant: '8rem'
       }
     },
     screens: {

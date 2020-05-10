@@ -11,6 +11,10 @@
       <template slot="title">Gradients</template>
       <gradients />
     </style-section>
+    <style-section>
+      <template slot="title">Fonts</template>
+      <fonts />
+    </style-section>
   </div>
 </template>
 
@@ -18,12 +22,14 @@
 import StyleSection from '~/components/styleguide/StyleSection.vue'
 import Colors from '~/components/styleguide/Colors.vue'
 import Gradients from '~/components/styleguide/Gradients.vue'
+import Fonts from '~/components/styleguide/Fonts.vue'
 
 export default {
   components: {
     StyleSection,
     Colors,
-    Gradients
+    Gradients,
+    Fonts
   }
 }
 </script>
