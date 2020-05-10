@@ -16,7 +16,7 @@
       <p>
         Lorem ipsum dolor sit amet, consectetur
         <span class="italic">italic</span> elit. Vivamus vel fringilla enim, ac
-        <span class="text-primary-700">primary 700</span> neque. Sed convallis
+        <span class="text-primary-900">primary 900</span> neque. Sed convallis
         euismod sem, vitae luctus tortor
         <span class="underline">underline</span>
         in. Curabitur sagittis tristique dui, sit amet lacinia dolor porta ac.

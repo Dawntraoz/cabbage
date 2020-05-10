@@ -1,11 +1,12 @@
 <template>
   <div :class="choosenColor">
     <ul class="w-full flex flex-wrap items-center pb-4">
-      <li><p class="pr-4 pb-2 text-gray-700">Select a color</p></li>
+      <li><p class="pr-4 pb-2 text-gray-700">Select color</p></li>
       <li v-for="color in colors" :key="color.bg" class="pr-2">
         <button
           :class="color.bg"
           class="w-6 h-6 rounded-full focus:outline-none"
+          :aria-label="'Choose ' + color.text"
           @click="choosenColor = color.text"
         />
       </li>

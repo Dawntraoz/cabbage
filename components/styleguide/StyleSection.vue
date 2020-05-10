@@ -4,7 +4,7 @@
       <h3 class="capitalize">
         <slot name="title"></slot>
       </h3>
-      <p class="pb-2 border-b border-gray-300 text-gray-600">
+      <p class="pb-2 border-b border-gray-300 text-gray-700">
         <slot name="title"></slot> for app theme.
       </p>
     </header>
