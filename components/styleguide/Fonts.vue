@@ -29,9 +29,10 @@
       </p>
     </div>
     <p
-      class="w-full lg:w-auto border-gray-400 pt-6 lg:pt-0 lg:pl-12 text-giant flex items-center justify-center leading-none"
+      class="w-full lg:w-auto border-gray-400 pt-6 lg:pt-0 lg:pl-12 flex flex-col items-center justify-center"
     >
-      Aa
+      <span class="text-giant leading-none">Aa</span>
+      <span class="text-lg">Source Sans Pro</span>
     </p>
   </div>
 </template>

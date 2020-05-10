@@ -12,7 +12,7 @@
       <gradients />
     </style-section>
     <style-section>
-      <template slot="title">Fonts</template>
+      <template slot="title">Fonts styles</template>
       <fonts />
     </style-section>
   </div>
