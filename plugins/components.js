@@ -11,6 +11,8 @@ import Icons from '@/components/styleguide/Icons.vue'
 /* Dashboard */
 import ChartBlock from '@/components/ChartBlock.vue'
 import ChartActivity from '@/components/ChartActivity.vue'
+import ChartObjective from '@/components/ChartObjective.vue'
+import ChartResult from '@/components/ChartResult.vue'
 
 Vue.component('page', Page)
 Vue.component('style-section', StyleSection)
@@ -24,3 +26,5 @@ Vue.component('icons', Icons)
 /* Dashboard */
 Vue.component('ChartBlock', ChartBlock)
 Vue.component('ChartActivity', ChartActivity)
+Vue.component('ChartObjective', ChartObjective)
+Vue.component('ChartResult', ChartResult)

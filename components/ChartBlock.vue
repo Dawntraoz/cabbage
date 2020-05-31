@@ -5,11 +5,11 @@
       :class="blok.card ? 'bg-white rounded-lg p-4 md:p-6' : 'md:pl-8'"
     >
       <header class="pb-4">
-        <h2 :class="blok.width === 'full' ? '' : 'text-xl'">
+        <h2 :class="{ 'text-xl': blok.width === 'full' }">
           {{ blok.title }}
         </h2>
       </header>
-      <div :class="blok.card ? '' : 'flex flex-wrap md:-mr-6'">
+      <div :class="{ 'flex flex-wrap md:-mr-6': !blok.card }">
         <component
           :is="blok.component"
           v-for="blok in blok.body"
