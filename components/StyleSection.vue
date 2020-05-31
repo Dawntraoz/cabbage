@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-8">
+  <div class="w-full pt-8">
     <header class="pb-6">
       <h3 class="capitalize">
         {{ blok.title }}

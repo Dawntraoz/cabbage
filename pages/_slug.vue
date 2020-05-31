@@ -1,15 +1,11 @@
 <template>
-  <div>
-    <header>
-      <h1>{{ story.name }}</h1>
-    </header>
-    <component
-      :is="story.content.component"
-      v-if="story.content.component"
-      :key="story.content._uid"
-      :blok="story.content"
-    ></component>
-  </div>
+  <component
+    :is="story.content.component"
+    v-if="story.content.component"
+    :key="story.content._uid"
+    :name="story.name"
+    :blok="story.content"
+  ></component>
 </template>
 
 <script>
