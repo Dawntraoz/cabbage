@@ -27,7 +27,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/components.js'],
+  plugins: [
+    '~/plugins/components.js',
+    { src: '~/plugins/vue-apex-charts.js', mode: 'client' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -35,7 +38,8 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/moment'
   ],
   /*
    ** Nuxt.js modules
