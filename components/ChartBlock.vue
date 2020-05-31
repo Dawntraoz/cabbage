@@ -1,20 +1,22 @@
 <template>
-  <div class="pt-6 md:pt-8" :class="width[blok.width]">
+  <div class="pt-6" :class="width[blok.width]">
     <section
       class="w-full"
       :class="blok.card ? 'bg-white rounded-lg p-4 md:p-6' : 'md:pl-8'"
     >
-      <header class="pb-6">
+      <header class="pb-4">
         <h2 :class="blok.width === 'full' ? '' : 'text-xl'">
           {{ blok.title }}
         </h2>
       </header>
-      <component
-        :is="blok.component"
-        v-for="blok in blok.body"
-        :key="blok._uid"
-        :blok="blok"
-      ></component>
+      <div :class="blok.card ? '' : 'flex flex-wrap md:-mr-6'">
+        <component
+          :is="blok.component"
+          v-for="blok in blok.body"
+          :key="blok._uid"
+          :blok="blok"
+        ></component>
+      </div>
     </section>
   </div>
 </template>

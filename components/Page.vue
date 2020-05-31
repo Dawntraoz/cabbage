@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap lg:items-start h-screen overflow-y-auto">
     <div
-      class="w-full lg:w-3/4 lg:h-screen lg:overflow-y-auto flex flex-wrap p-4 pb-12 md:pt-6 md:px-10 "
+      class="w-full lg:w-3/4 lg:h-screen lg:overflow-y-auto flex flex-wrap p-4 md:pt-6 md:px-10"
     >
       <header>
         <h1>{{ name }}</h1>
