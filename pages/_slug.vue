@@ -17,7 +17,7 @@ export default {
     return context.app.$storyapi
       .get(`cdn/stories/${slug}`, {
         version:
-          context.query._storyblok || context.isDev ? 'draft' : 'published'
+          context.query._storyblok || context.isDev ? 'draft' : 'published',
       })
       .then((res) => {
         return res.data
@@ -25,12 +25,12 @@ export default {
       .catch((res) => {
         context.error({
           statusCode: res.response.status,
-          message: res.response.data
+          message: res.response.data,
         })
       })
   },
   data() {
     return { story: { content: {} } }
-  }
+  },
 }
 </script>

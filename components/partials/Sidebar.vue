@@ -19,17 +19,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import Charts from '~/components/icons/Charts.vue'
-import Bone from '~/components/icons/Bone.vue'
-
-export default {
-  components: {
-    Logo,
-    Charts,
-    Bone
-  }
-}
+export default {}
 </script>
 
 <style scoped>

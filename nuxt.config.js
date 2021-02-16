@@ -1,5 +1,6 @@
 module.exports = {
-  mode: 'universal',
+  // Target (https://go.nuxtjs.dev/config-target)
+  target: 'static',
   /*
    ** Headers of the page
    */
@@ -11,10 +12,10 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -29,7 +30,13 @@ module.exports = {
    */
   plugins: [
     '~/plugins/components.js',
-    { src: '~/plugins/vue-apex-charts.js', mode: 'client' }
+    { src: '~/plugins/vue-apex-charts.js', mode: 'client' },
+  ],
+  components: [
+    '~/components',
+    '~/components/icons',
+    '~/components/styleguide',
+    '~/components/partials',
   ],
   /*
    ** Nuxt.js dev-modules
@@ -39,7 +46,7 @@ module.exports = {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/moment'
+    '@nuxtjs/moment',
   ],
   /*
    ** Nuxt.js modules
@@ -49,10 +56,10 @@ module.exports = {
     [
       'storyblok-nuxt',
       {
-        accessToken: 'dl67L79EMXIGqEeD3Xv6hQtt',
-        cacheProvider: 'memory'
-      }
-    ]
+        accessToken: process.env.API_KEY,
+        cacheProvider: 'memory',
+      },
+    ],
   ],
   /*
    ** Build configuration
@@ -61,6 +68,6 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 }

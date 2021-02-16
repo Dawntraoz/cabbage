@@ -6,21 +6,15 @@
 </template>
 
 <script>
-import Sidebar from '~/layouts/partials/Sidebar.vue'
-
-export default {
-  components: {
-    Sidebar
-  }
-}
+export default {}
 </script>
 
 <style scoped>
 .page-enter-active {
-  animation: acrossIn 0.4s ease-out both;
+  animation: acrossIn 0.6s ease-out both;
 }
 .page-leave-active {
-  animation: acrossOut 0.6s ease-in both;
+  animation: acrossOut 0.4s ease-in both;
 }
 @keyframes acrossIn {
   0% {
@@ -35,7 +29,7 @@ export default {
 @keyframes acrossOut {
   0% {
     transform: translate3d(0%, 0, 0);
-    opacity: 1;
+    opacity: 0.15;
   }
   100% {
     transform: translate3d(20%, 0, 0);
