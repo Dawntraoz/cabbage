@@ -25,8 +25,10 @@ export default {}
 <style scoped>
 .nav-link {
   @apply transition-all duration-1000 ease-in-out block w-10 h-10 bg-white text-primary-400 rounded-full flex items-center justify-center shadow-inner;
+}
 
-  @screen md {
+@screen md {
+  .nav-link {
     @apply w-12 h-12;
   }
 }
